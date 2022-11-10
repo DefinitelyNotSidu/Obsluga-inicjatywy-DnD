@@ -24,6 +24,7 @@ def removeItemFromList(initiativeList):
     return initiativeList
 
 
+
 participants = int(input("Ilosc walczacych: "))
 initiative = []
 
@@ -32,17 +33,20 @@ for i in range(participants):
     initiative = extendInitiativeList(initiative)
 
 #petla programu
-print( "<h> - wyswietla pomoc\n<d> - dodaje uczestnika walki\n<r> - usuwa uczestnika walki\n<p> - wypisuje liste inicjatywy\n<q> - wyjdz")
+print( "<h> - wyswietla pomoc\n<a> - dodaje uczestnika walki\n<r> - usuwa uczestnika walki\n<p> - wypisuje liste inicjatywy\n<q> - wyjdz")
 while True:
-    action = input("Akcja (h/d/r/p/q):" )
+    action = input("Akcja (h/a/r/p/c/q):" )
     if action == 'h':
         print( "<h> - wyswietla pomoc\n<d> - dodaje uczestnika walki\n<r> - usuwa uczestnika walki\n<p> - wypisuje liste inicjatywy\n<q> - wyjdz")
-    elif action == 'd':
+    elif action == 'a':
         initiative = extendInitiativeList(initiative)
     elif action == 'r':
         initiative = removeItemFromList(initiative)
     elif action == 'p':
         printInitiative(initiative)
+    elif action == 'c':
+        initiative.clear()
+        print("lista zostala wyczyszczona")
     elif action == 'q':
         choice = input("Jestes pewny ze chcesz wyjsc? TAK/cokolwiek: ")
         if choice == "TAK":
