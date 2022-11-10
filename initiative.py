@@ -33,7 +33,7 @@ for i in range(participants):
     initiative = extendInitiativeList(initiative)
 
 #petla programu
-print( "<h> - wyswietla pomoc\n<a> - dodaje uczestnika walki\n<r> - usuwa uczestnika walki\n<p> - wypisuje liste inicjatywy\n<q> - wyjdz")
+print( "<h> - wyswietla pomoc\n<a> - dodaje uczestnika walki\n<r> - usuwa uczestnika walki\n<p> - wypisuje liste inicjatywy\n<c> - czysci liste\n<q> - wyjdz")
 while True:
     action = input("Akcja (h/a/r/p/c/q):" )
     if action == 'h':
