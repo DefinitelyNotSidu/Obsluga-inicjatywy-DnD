@@ -37,7 +37,7 @@ print( "<h> - wyswietla pomoc\n<a> - dodaje uczestnika walki\n<r> - usuwa uczest
 while True:
     action = input("Akcja (h/a/r/p/c/q):" )
     if action == 'h':
-        print( "<h> - wyswietla pomoc\n<d> - dodaje uczestnika walki\n<r> - usuwa uczestnika walki\n<p> - wypisuje liste inicjatywy\n<q> - wyjdz")
+        print( "<h> - wyswietla pomoc\n<a> - dodaje uczestnika walki\n<r> - usuwa uczestnika walki\n<p> - wypisuje liste inicjatywy\n<c> - czysci liste\n<q> - wyjdz")
     elif action == 'a':
         initiative = extendInitiativeList(initiative)
     elif action == 'r':
